@@ -181,49 +181,48 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
-![418443753-eb1b71f9-58d8-4fef-938a-b3115d1f85a3](https://github.com/user-attachments/assets/ec24d239-1ac2-4910-b018-844062fd8f1a)
+![306325633-2f7618eb-26c9-4a06-b037-6e2a05e035a8](https://github.com/user-attachments/assets/4b0c79ac-862f-4f33-8ca9-f124b07f72f8)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-![418443754-6592b8ec-3aaf-4da8-820f-cf798b1cc689](https://github.com/user-attachments/assets/c21ab2bf-07e6-476e-8099-5e01cc304f16)
+![306325688-1586acca-2c82-4c42-98bc-4ae798eef1a8](https://github.com/user-attachments/assets/2c814c01-48eb-470e-90bc-6f6dcacc5536)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
-![418443798-059731d3-ab8e-4a98-8fbf-6d3c6599d27e](https://github.com/user-attachments/assets/e6ff641e-bbb0-4b37-92a9-2942b7def3a5)
 
+![306325797-8688c525-73fb-44c1-aedc-42c6bf61741e](https://github.com/user-attachments/assets/4d53caa2-37fb-43fc-9ac7-271fdb89701e)
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
 
-![418443882-c519e10c-90d3-4917-b608-8363547085a2](https://github.com/user-attachments/assets/add20b72-33e5-46e3-8b84-0b833b161fa2)
+![306326121-4980783d-eee0-4468-a932-ed98b32fb05f](https://github.com/user-attachments/assets/0bf67c17-348d-443c-b3c9-9b6f590078ae)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
 
-![418443933-efed1af5-516d-4bcf-a3ab-3492a708bf00](https://github.com/user-attachments/assets/c834057f-0b87-4428-b77c-b74b0b524696)
+![306326236-0c3b9da2-1ec3-4ed6-afdf-d97b3ec65697](https://github.com/user-attachments/assets/e6a41d74-eaf8-4d9a-882a-faf0bcb56894)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
-![418444010-6a3d824a-19cb-469f-9e30-4e1dcc4bbfb2](https://github.com/user-attachments/assets/450bf1f1-6a4f-4c8f-8410-0c728f5d2274)
+![306326325-69094a6a-7169-4233-8e34-b63fd3b50f86](https://github.com/user-attachments/assets/861bc1e9-4332-41dc-9520-c7aa65514c16)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
 
-![418444010-6a3d824a-19cb-469f-9e30-4e1dcc4bbfb2](https://github.com/user-attachments/assets/d4fdde0b-d7df-4443-a79a-b58e6297a16b)
 
+![306326400-228361e3-4c51-408b-acae-b547654c8d92](https://github.com/user-attachments/assets/429116a4-d0d1-4093-9e5a-5e1b945e8e6b)
 
 egrep '[1-9]' newfile 
 ## OUTPUT
 
-![418444043-ea09cc56-c041-44bc-a84c-9e8e72a72526](https://github.com/user-attachments/assets/b0f48590-5929-45bd-832d-d8111887c71f)
+![306326507-78841f5b-a1d6-42da-a170-f873f2db1c02](https://github.com/user-attachments/assets/3fa7cbef-abcf-4c07-ba8d-66dce9bf204b)
 
 
 egrep 'Linux.*world' newfile 
@@ -334,30 +333,29 @@ seq 10 | sed -n '2,~4p'
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-
-![306328812-ebff4972-2af6-4823-8af3-5a2218ed0f9e](https://github.com/user-attachments/assets/0ad17f9c-e364-49c1-a4d8-e01efe6cdfd5)
+![306328812-ebff4972-2af6-4823-8af3-5a2218ed0f9e](https://github.com/user-attachments/assets/79442aa0-5003-40b0-8724-2f333e500c3d)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
-![306329113-6a7d5a34-213f-4d78-a264-72be126d9325](https://github.com/user-attachments/assets/1c3ede31-63a4-4e11-8d11-be0cf5a1b9c2)
+![306329113-6a7d5a34-213f-4d78-a264-72be126d9325](https://github.com/user-attachments/assets/e6481375-ae6b-4c63-84b6-2dd9d52e9d85)
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+=
 
-![306329230-56f96442-9167-4513-812b-07e8b22b9252](https://github.com/user-attachments/assets/b19ca28c-e867-4121-80b4-453260b17d10)
+sed -n '2,4{s/^/$/;p}' file23![306329230-56f96442-9167-4513-812b-07e8b22b9252](https://github.com/user-attachments/assets/e3198016-cd4e-40f1-9192-82a945fef4eb)
 
-sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-![306329333-cbadd6df-119c-4a6a-b7ac-8888a033311e](https://github.com/user-attachments/assets/fc443921-9e3f-4446-858e-b13590bd6c5c)
+![306329333-cbadd6df-119c-4a6a-b7ac-8888a033311e](https://github.com/user-attachments/assets/77e5e64f-6413-4c4d-a0be-3f5e930a10d0)
 
 
 sed -n '2,4{s/$/*/;p}' file23
 ## OUTPUT
 
-![306329585-36d38ad5-fd86-4e5d-86f3-734e1c0390bc](https://github.com/user-attachments/assets/b1817394-b76c-415b-bba1-a44a0ccc8c39)
+![306329585-36d38ad5-fd86-4e5d-86f3-734e1c0390bc](https://github.com/user-attachments/assets/963d9569-ddc3-4893-a8ca-3b4b071f4daf)
 
 #Sorting File content
 cat > file21
